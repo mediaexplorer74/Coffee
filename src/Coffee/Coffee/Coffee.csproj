@@ -13,6 +13,13 @@
   <ItemGroup>
     <None Remove="Fonts\OpenSans-Light.ttf" />
     <None Remove="Fonts\OpenSans-SemiBold.ttf" />
+    <None Remove="tick.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="tick.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

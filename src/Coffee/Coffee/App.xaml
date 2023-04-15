@@ -75,11 +75,8 @@
         <Style x:Key="PeekBadgeText" TargetType="Label">
             <Setter Property="FontFamily" Value="SemiBoldFont" />
             <Setter Property="FontSize" Value="10" />
-            <Setter Property="TextColor" Value="TextColor" />
+            <Setter Property="TextColor" Value="{StaticResource TextColor}" />
         </Style>
-
-
-
 
     </Application.Resources>
 </Application>

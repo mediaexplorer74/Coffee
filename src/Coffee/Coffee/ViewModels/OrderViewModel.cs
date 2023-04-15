@@ -37,36 +37,43 @@ namespace Coffee.ViewModels
             SelectedItem = new CoffeeItem()
             {
                 Name = "Mocha Frappuccino",
-                Description = "Buttery caramel syrup meets coffee, milk and ice for a rendezvous in the blender.",
+                Description = "Buttery caramel syrup meets coffee, " +
+                "milk and ice for a rendezvous in the blender.",
                 SmallPrice = 3.15m,
                 MediumPrice = 3.45m,
                 LargePrice = 4.20m,
                 ImageUrl = "MochaFrappuccino.png"
             };
 
+            // ***********************************************************
             // create a fake shopping cart item
             Items = new ObservableRangeCollection<ShoppingCartItem>();
             Items.CollectionChanged += Items_CollectionChanged;
-            //Items.Add(new ShoppingCartItem
-            //{
-            //    Name = "Caramel Frappuccino",
-            //    Size = "M",
-            //    Price = 4.85m,
-            //    Quantity = 1,
-            //    ImageUrl = "MochaFrappuccino.png"
-            //});
-            //Items.Add(new ShoppingCartItem
-            //{
-            //    Name = "Mocha Frappuccino",
-            //    Size = "L",
-            //    Price = 5.20m,
-            //    Quantity = 1,
-            //    ImageUrl = "MochaFrappuccino.png"
-            //});
+            
+            //RnD
+            Items.Add(new ShoppingCartItem
+            {
+                Name = "Caramel Frappuccino",
+                Size = "M",
+                Price = 4.85m,
+                Quantity = 1,
+                ImageUrl = "MochaFrappuccino.png"
+            });
+            
+            Items.Add(new ShoppingCartItem
+            {
+                Name = "Mocha Frappuccino",
+                Size = "L",
+                Price = 5.20m,
+                Quantity = 1,
+                ImageUrl = "MochaFrappuccino.png"
+            });
+            // *****************************
 
         }
 
-        private void Items_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        private void Items_CollectionChanged(object sender, 
+            System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
             OnPropertyChanged(nameof(TotalPrice));
         }
