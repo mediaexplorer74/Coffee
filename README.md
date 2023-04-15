@@ -1,5 +1,5 @@
 # Coffee
-![](Images/logo.png)
+![](images/logo.png)
 
 "Buy me some coffee" =) It's joke!
 
@@ -7,7 +7,7 @@
  A [Xamarin.Forms UI Challenge]() sample that i want to expand to UWP "target". 
 
 ## Screenshots
-![](Images/shot2.png)
+![](images/shot1.png)
 
 ## References / How-to
 https://kymphillpotts.com/
